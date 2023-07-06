@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Portfolio: Finish Mobile Version</b></h3>
 
 </div>
 
@@ -26,7 +26,7 @@
 
 # 📖 [Portfolio: finish mobile version] <a name="about-project"></a>
 
-**[Portfolio: finish mobile version]** In this project, I set up the mobile header of my portfolio. My goal here is to set up and customize the header and navbar of my portfolio for mobile version.
+**[Portfolio: finish mobile version]** In this project, I set up the complete mobile version of my portfolio. My goal here is to set up and customize my portfolio for mobile version.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -111,10 +111,10 @@ npx hint .
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add my new projects
+- [ ] Add desktop version
 - [ ] make it ready for deployment
 - [ ] Integration with Javascript
-- [ ] Adding more html contents
+- [ ] Adding contact form
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
