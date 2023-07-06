@@ -99,7 +99,7 @@ p {
   color: #7f8cff;
 }
 
-.social-icons  {
+.social-icons {
   display: flex;
   font-weight: 500;
   font-size: 16px;
@@ -108,10 +108,15 @@ p {
   list-style: none;
 }
 
+.btn a {
+  text-decoration: none;
+  color: var(--primary-b-500, #396df2);
+  text-align: center;
+}
+
 .nav-links li a {
   display: none;
 }
-
 
 /* <!-- ---------- cards section -----------> */
 
@@ -121,14 +126,14 @@ p {
 }
 
 .cards {
-    display: flex;
-    padding: 5%;
-    box-sizing: border-box;
-    flex-direction: column;
-    gap: 12px;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    background: var(--neutrals-n-0, #FFF);
+  display: flex;
+  padding: 5%;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background: var(--neutrals-n-0, #fff);
 }
 
 figure {
@@ -152,26 +157,25 @@ figure {
 .dot {
   list-style-type: disc;
   display: flex;
-  color: var(--theme-1-neutrals-6, #6B778C);
+  color: var(--theme-1-neutrals-6, #6b778c);
   gap: 2rem;
   margin-left: 1.5rem;
 }
 
 .dot li {
-  font-size: large; 
+  font-size: large;
 }
 
 .skills-card {
   display: flex;
   list-style: none;
   gap: 1rem;
-  color: var(--primary-b-400, #6070FF);
+  color: var(--primary-b-400, #6070ff);
 }
 
 .skill-1 {
   border-radius: 0.5rem;
-  background: var(--primary-b-50, #EBEBFF);
-  font-family: Poppins;
+  background: var(--primary-b-50, #ebebff);
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -187,16 +191,10 @@ figure {
   padding: 0.75rem;
   gap: 0.625rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--primary-b-400, #6070FF);
-  background: var(--neutrals-n-10, #F7F7F9);
+  border: 1px solid var(--primary-b-400, #6070ff);
+  background: var(--neutrals-n-10, #f7f7f9);
   width: 47%;
   margin-top: 20px;
-}
-
-.btn a {
-  text-decoration: none;
-  color: var(--primary-b-500, #396DF2);
-  text-align: center;
 }
 
 /* ----------- ABOUT MYSELF ----------- */
@@ -208,15 +206,14 @@ figure {
 .about {
   display: flex;
   flex-direction: column;
-  background: var(--neutrals-n-0, #FFF);
+  background: var(--neutrals-n-0, #fff);
   border-top-right-radius: 60px;
   padding: 7.125rem 1.5rem;
 }
 
 .skill-2 {
   border-radius: 0.5rem;
-  background: var(--neutrals-n-10, #F7F7F9);
-  font-family: Poppins;
+  background: var(--neutrals-n-10, #f7f7f9);
   font-size: 0.85rem;
   font-style: normal;
   font-weight: 500;
@@ -266,7 +263,7 @@ figure {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.25rem;
-  color: var(--neutrals-n-0, #FFF);
+  color: var(--neutrals-n-0, #fff);
   height: 3.5rem;
 }
 
@@ -276,14 +273,14 @@ footer {
   padding: 5%;
   flex-direction: column;
   border-top-left-radius: 60px;
-  background:  var(--primary-b-400, #6070FF);
+  background: var(--primary-b-400, #6070ff);
   background-image: url(images/browser-icons/contac-shape-bg.svg);
   background-position: 155px 30px;
   background-repeat: no-repeat;
 }
 
 .contact p {
-  color: var(--primary-b-50, #EBEBFF);
+  color: var(--primary-b-50, #ebebff);
   margin: 20px 2px 30px;
 }
 
@@ -300,4 +297,3 @@ footer {
   background: #fff;
   border-radius: 8px;
 }
-
