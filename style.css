@@ -371,3 +371,7 @@ footer {
   background: #fff;
   border-radius: 8px;
 }
+
+.contact-form {
+  border: 1px solid transparent;
+}
