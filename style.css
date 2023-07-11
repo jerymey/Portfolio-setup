@@ -242,7 +242,7 @@ p {
   border-radius: 0.5rem;
   border: 1px solid var(--primary-b-400, #6070ff);
   background: var(--neutrals-n-10, #f7f7f9);
-  width: 47%;
+  width: 40%;
   margin-top: 20px;
 }
 
@@ -374,4 +374,18 @@ footer {
 
 .contact-form {
   border: 1px solid transparent;
+}
+
+button {
+  color: #396df2;
+  font-size: 17px;
+  display: flex;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid blue;
+  background: #396df2;
+  color: #fff;
+  transition: 0.5s;
 }
