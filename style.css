@@ -141,9 +141,12 @@ body {
 }
 
 .btn a {
+  display: flex;
   text-decoration: none;
   color: var(--primary-b-500, #396df2);
   text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .nav-links li a {
@@ -319,3 +322,52 @@ h3 {
 }
 
 /* ----------- Footer ----------- */
+
+.footer {
+  margin-top: 25%;
+  padding: 5%;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 30%;
+}
+
+.title-footer {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: var(--neutrals-n-0, #fff);
+  height: 3.5rem;
+}
+
+footer {
+  display: flex;
+  height: 53.6875rem;
+  padding: 5%;
+  flex-direction: column;
+  border-top-left-radius: 60px;
+  background: var(--primary-b-400, #6070ff);
+  background-image: url(images/browser-icons/contac-shape-bg.svg);
+  background-position: 155px 30px;
+  background-repeat: no-repeat;
+}
+
+.contact p {
+  color: var(--primary-b-50, #ebebff);
+  margin: 20px 2px 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 20.4375rem;
+  margin: 5px 4px 13px;
+  padding: 15px 11px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  outline: none;
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+}
