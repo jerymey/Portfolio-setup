@@ -29,18 +29,28 @@ body {
   background: white;
   background-image: url(images/bg-image.png);
   background-repeat: no-repeat;
-  min-height: 80vh;
-  padding: 5%;
+  background-position: center;
+  padding: 29% 25px;
   border-bottom-left-radius: 70px;
+  align-items: center;
 }
 
 .logo {
-  color: var(--primary-b-400, #6070ff);
   display: flex;
-  flex-direction: row;
-  padding: 10px 12px;
-  margin-left: 12px;
-  margin-top: 4px;
+  padding: 14px;
+  gap: 15rem;
+}
+
+figure img {
+  width: 100%;
+}
+
+.logo img {
+  display: block;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  padding: 3px;
 }
 
 .logo a {
@@ -52,23 +62,11 @@ body {
 }
 
 .navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 50px;
   background-color: white;
-}
-
-.menu-icon {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  padding: 8px;
-}
-
-.menu-icon img {
-  display: block;
-  margin-left: 100px;
 }
 
 .nav-links {
@@ -155,6 +153,10 @@ body {
 
 /* <!-- ---------- cards section -----------> */
 
+/* .desktop {
+  display: none;
+} */
+
 .card-container {
   display: grid;
   gap: 8rem;
@@ -177,7 +179,7 @@ body {
 }
 
 figure {
-  text-align: center;
+  width: 100%;
 }
 
 .header-details {
@@ -242,8 +244,8 @@ p {
   border-radius: 0.5rem;
   border: 1px solid var(--primary-b-400, #6070ff);
   background: var(--neutrals-n-10, #f7f7f9);
-  width: 40%;
-  margin-top: 20px;
+  width: fit-content;
+  margin-top: 10px;
 }
 
 /* ----------- ABOUT MYSELF ----------- */
@@ -390,23 +392,24 @@ button:hover {
   transition: 0.5s;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   body {
-    display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
+    background: #fff;
   }
-  
+
   .body-white {
     width: 100%;
+    position: relative;
   }
 
   .header {
+    display: flex;
     height: 52.875rem;
     padding: 0.0625% 10.25% 4% 13%;
-    position: absolute;
-    background: #fff;
+    position: relative;
     background-image: url(images/desktop-version/bg/Header\ bg@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -416,51 +419,61 @@ button:hover {
     align-items: center;
     flex-shrink: 0;
     width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 0.75rem;
   }
 
+  .header-1 {
+    padding: 20rem 10rem 10rem 8rem;
+  }
+
+  .navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+    padding: 2% 0 0 90px;
+    gap: 56rem;
+  }
+
   .logo {
-    display: inline-block;
+    display: flex;
     flex-direction: row;
     padding: 0% 5%;
     margin-left: 3px;
     margin-top: 0%;
+    gap: 15rem;
   }
 
-  .logo a{
-    color: var(--primary-b-400, #6070FF);
-    font-family: 'Poppins', sans-serif ;
+  .logo a {
+    color: var(--primary-b-400, #6070ff);
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1rem;
     display: flex;
   }
 
-  .navbar {
-    display: inline-flex;
-    padding: 1rem 8.9375rem;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 49.75rem;
-  }
-
-  .nav-links li a{
+  .nav-links li a {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     color: var(--neutrals-n-600, #344563);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
   }
 
   .nav-links {
-     flex: 1;
-     text-align: right;
-     gap: 30px;
+    flex: 1;
+    text-align: right;
+    gap: 30px;
   }
 
-  .menu-icon {
+  .logo img {
     display: none;
   }
 
@@ -470,7 +483,7 @@ button:hover {
     height: 11.625rem;
     flex-direction: column;
     justify-content: center;
-    color: var(--theme-1-neutrals-1, #091E42);
+    color: var(--theme-1-neutrals-1, #091e42);
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-style: normal;
@@ -487,10 +500,131 @@ button:hover {
     height: 6.125rem;
     flex-direction: column;
     color: var(--theme-1-neutrals-3, #344563);
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.75rem;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    max-width: 1104px;
+    -moz-column-gap: 46px;
+    column-gap: 46px;
+    padding: 1.5rem;
+
+    /* align-items: center; */
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .detail-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+  }
+
+  .cards > * {
+    flex-basis: 50%;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .cards-2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 8.125rem 11.5rem;
+    margin-top: -17rem;
+  }
+
+  .detail-card-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    background-image: url(images/desktop-version/bg/contact\ form\ background\ shapes.svg);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .contact p {
+    color: var(--primary-b-50, #ebebff);
+    width: 30vw;
+    margin-left: 27rem;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .skill-2 {
+    display: flex;
+    width: 7.625rem;
+    padding: 0.75rem 0.75rem 1.25rem 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .language {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.625rem 1rem 0;
+    gap: 20rem;
+  }
+
+  .para-about {
+    width: 28.4375rem;
+  }
+
+  button {
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .btn-1 {
+    width: fit-content;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    border-radius: 0%;
+    width: 27.9375rem;
   }
 }
