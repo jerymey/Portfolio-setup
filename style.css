@@ -43,6 +43,19 @@ body {
   margin-top: 4px;
 }
 
+.logo {
+  opacity: 0;
+  animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {opacity: 2;
+  }
+}
+
 .logo a {
   text-decoration: none;
   font-weight: 700;
