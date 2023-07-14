@@ -41,9 +41,6 @@ body {
   padding: 10px 12px;
   margin-left: 12px;
   margin-top: 4px;
-}
-
-.logo {
   opacity: 0;
   animation: fade-in 2s forwards;
 }
@@ -52,7 +49,9 @@ body {
   from {
     opacity: 0;
   }
-  to {opacity: 2;
+
+  to {
+    opacity: 2;
   }
 }
 
@@ -77,6 +76,11 @@ body {
   height: 24px;
   cursor: pointer;
   padding: 8px;
+}
+
+figure img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .menu-icon img {
@@ -198,11 +202,6 @@ img:hover {
 
 figure {
   text-align: center;
-}
-
-figure img {
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
 }
 
 .header-details {
