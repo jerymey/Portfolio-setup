@@ -80,7 +80,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 Run this command:<br/>
-git clone git@github.com:jerymey/Portfolio-setup.git
+git clone https://github.com/jerymey/Portfolio-setup.git
 
 
 ### Install
