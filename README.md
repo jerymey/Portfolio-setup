@@ -63,7 +63,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Preview Link](https://jerymey.github.io/My-portfolio/)
+[Live Preview Link](https://jerymey.github.io/Portfolio-setup/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -102,6 +102,10 @@ Install live server extension in VS code then open index.html file using live se
 To run tests, run the following command:
 
 npx hint .
+
+### Deployment
+
+You can deploy this project using: https://jerymey.github.io/Portfolio-setup/
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
