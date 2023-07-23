@@ -13,28 +13,33 @@
 body {
   background: #e5e5e5;
   font-family: "Poppins", sans-serif;
-  min-width: 768px;
+  /* min-width: 768px; */
 }
 
-.body-white {
-  width: 60%;
-  background: #f7f7f9;
+header {
+  padding: 1rem;
+  background-color: white;
+}
+
+.header-1 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 8rem 1.5rem 7rem 1.5rem;
 }
 
 .header {
-  display: flex;
-  width: 27.4375rem;
-  background: white;
+  background: #f7f7f9;
   background-image: url(images/bg-image.png);
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 29% 25px;
+  background-size: 100%;
   border-bottom-left-radius: 70px;
-  align-items: center;
+  border: solid white;
 }
 
 .logo {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo a {
@@ -43,15 +48,6 @@ body {
   font-size: 18px;
   line-height: 16px;
   color: #6070ff;
-  width: 5rem;
-}
-
-.navbar {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-  background-color: white;
 }
 
 .nav-links {
@@ -62,7 +58,6 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.25rem;
-  padding-top: 70px;
   color: var(--neutrals-n-800, #172b4d);
 }
 
@@ -137,6 +132,14 @@ body {
 
 /* <!-- ---------- cards section -----------> */
 
+.desktop {
+  display: none;
+}
+
+.desktop.skill-1 {
+  display: none;
+}
+
 .card-container {
   display: grid;
   gap: 8rem;
@@ -159,6 +162,10 @@ body {
 }
 
 figure {
+  width: 100%;
+}
+
+figure img {
   width: 100%;
 }
 
@@ -391,8 +398,8 @@ button:hover {
 
   .header {
     display: flex;
-    height: 52.875rem;
-    padding: 0.0625% 10.25% 4% 13%;
+    /* height: 52.875rem; */
+    /* padding: 0.0625% 10.25% 4% 13%; */
     position: relative;
     background-image: url(images/desktop-version/bg/Header\ bg@2x.png);
     background-size: cover;
@@ -420,7 +427,6 @@ button:hover {
     align-items: flex-start;
     margin: 0;
     padding: 1rem 8.9375rem;
-    gap: 49.75rem;
   }
 
   .logo a {
