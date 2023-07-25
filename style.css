@@ -36,6 +36,7 @@ header {
   background-size: 100%;
   border-bottom-left-radius: 70px;
   padding: 5rem 1rem 2rem 1rem;
+
   /* border: solid green 2px; */
 }
 
@@ -43,7 +44,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
-  width: 130%; 
+  width: 130%;
 }
 
 .logo {
@@ -55,7 +56,16 @@ header {
   margin-top: 8px;
 }
 
-.nav-links li{
+.btn a {
+  display: flex;
+  text-decoration: none;
+  color: var(--primary-b-500, #396df2);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.nav-links li {
   list-style: none;
 }
 
@@ -78,10 +88,10 @@ header {
   font-size: 35px;
   line-height: 5rem;
   padding: 5rem;
-  transition: 0.7 ease;
+  transition: 0.7s ease;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
   color: var(--neutrals-n-800, #172b4d);
 }
 
@@ -93,10 +103,23 @@ header {
   left: 0;
 }
 
+.bar {
+  display: block;
+  flex: 1;
+  width: 25px;
+  height: 2.5px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #6070ff;
+}
+
 .hamb {
   display: block;
   cursor: pointer;
+
   /* margin-bottom: 5rem; */
+
   /* border: solid yellow; */
   width: 50%;
 }
@@ -113,17 +136,6 @@ header {
 .hamb.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   background-color: #fff;
-}
-
-.bar {
-  display: block;
-  flex: 1;
-  width: 25px;
-  height: 2.5px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #6070ff;
 }
 
 .title {
@@ -187,15 +199,6 @@ header {
   height: 1.25rem;
   margin-top: 1rem;
   margin-left: 1rem;
-}
-
-.btn a {
-  display: flex;
-  text-decoration: none;
-  color: var(--primary-b-500, #396df2);
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 500;
 }
 
 /* <!-- ---------- cards section -----------> */
@@ -454,9 +457,7 @@ button:hover {
   transition: 0.5s;
 }
 
-
 @media (min-width: 768px) {
-
   .header {
     background-image: url(images/desktop-version/bg/Header\ bg@2x.png);
     background-size: 100%;
