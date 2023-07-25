@@ -25,7 +25,7 @@ header {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  padding: 0rem 1rem 6rem 1rem;
+  padding: 0 1rem 6rem 1rem;
   margin: 4rem 1.5rem 2rem 1.5rem;
 }
 
@@ -74,7 +74,7 @@ header {
   left: -100%;
   top: 0;
   flex-direction: column;
-  background: var(--theme-1-primary-colors-2, #6070FF);
+  background: var(--theme-1-primary-colors-2, #6070ff);
   mix-blend-mode: multiply;
   backdrop-filter: blur(10px);
   width: 100%;
