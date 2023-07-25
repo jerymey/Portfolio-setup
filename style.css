@@ -472,7 +472,8 @@ button:hover {
   }
 
   .nav-links {
-    display: block;
+    display: inline-block;
+
     color: #000;
 
     /* position: fixed;
