@@ -87,14 +87,13 @@ header {
   display: flex;
   width: 15.6875rem;
   height: 5.5rem;
-  flex-direction: column;
-  justify-content: center;
   flex-shrink: 0;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
   font-size: 35px;
   transition: 0.2s ease;
+  margin-left: 25px;
 }
 
 .nav-links li a:hover {
