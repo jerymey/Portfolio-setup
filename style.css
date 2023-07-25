@@ -25,8 +25,8 @@ header {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  padding: 3rem 1rem 3rem 1rem;
-  margin: 8rem 1.5rem 2rem 1.5rem;
+  padding: 0rem 1rem 6rem 1rem;
+  margin: 4rem 1.5rem 2rem 1.5rem;
 }
 
 .header {
@@ -74,29 +74,31 @@ header {
   left: -100%;
   top: 0;
   flex-direction: column;
-  background-color: #7f8cff;
+  background: var(--theme-1-primary-colors-2, #6070FF);
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
   width: 100%;
   text-align: center;
   height: 100vh;
-  opacity: 0.93;
+  padding-top: 4rem;
 }
 
 .nav-links li a {
+  display: flex;
+  width: 15.6875rem;
+  height: 5.5rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
   font-size: 35px;
-  line-height: 5rem;
-  padding: 5rem;
-  transition: 0.7s ease;
+  transition: 0.2s ease;
 }
 
 .nav-links li a:hover {
   color: var(--neutrals-n-800, #172b4d);
-}
-
-.nav-items {
-  margin: 16px;
 }
 
 .nav-links.active {
@@ -117,10 +119,6 @@ header {
 .hamb {
   display: block;
   cursor: pointer;
-
-  /* margin-bottom: 5rem; */
-
-  /* border: solid yellow; */
   width: 50%;
 }
 
