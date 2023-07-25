@@ -473,7 +473,10 @@ button:hover {
   }
 
   .nav-links {
-    position: fixed;
+    display: block;
+    color: #000;
+
+    /* position: fixed;
     left: -100%;
     top: 0;
     flex-direction: column;
@@ -481,7 +484,7 @@ button:hover {
     width: 100%;
     text-align: center;
     height: 100vh;
-    opacity: 0.93;
+    opacity: 0.93; */
   }
 
   .nav-links li a {
@@ -494,6 +497,10 @@ button:hover {
     font-style: normal;
     font-weight: 600;
     line-height: 1.25rem;
+  }
+
+  .navbar {
+    width: 1%;
   }
 
   .bar {
