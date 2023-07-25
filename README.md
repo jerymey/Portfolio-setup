@@ -118,6 +118,12 @@ You can deploy this project using: https://jerymey.github.io/Portfolio-setup/
 - Twitter: [@twitterhandle](https://twitter.com/jerymey4)
 - Linkedin: [@linkedin](www.linkedin.com/in/jery-mey-melachio-tchoffo-00055020a)
 
+👤 **brighton mtandi**
+
+- GitHub: [brighton0102](htpps://github.com/brighton0102)
+- Twitter: [@brighton_ui](https://twitter.com/brighton_ui)
+- LinkedIn: [brighton](https://www.linkedin.com/in/brighton-mtandi-976615267/)
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] Add desktop version
