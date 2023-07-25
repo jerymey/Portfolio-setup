@@ -80,7 +80,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 Run this command:<br/>
-git clone git@github.com:jerymey/Portfolio-setup.git
+git clone https://github.com/jerymey/Portfolio-setup.git
 
 
 ### Install
@@ -102,11 +102,6 @@ Install live server extension in VS code then open index.html file using live se
 To run tests, run the following command:
 
 npx hint .
-
-### Deployment
-
-You can deploy this project using: https://jerymey.github.io/Portfolio-setup/
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
