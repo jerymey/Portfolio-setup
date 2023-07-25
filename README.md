@@ -103,11 +103,6 @@ To run tests, run the following command:
 
 npx hint .
 
-### Deployment
-
-You can deploy this project using: [This Link](https://jerymey.github.io/Portfolio-setup/)
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
@@ -117,6 +112,12 @@ You can deploy this project using: [This Link](https://jerymey.github.io/Portfol
 - GitHub: [@githubhandle](https://github.com/jerymey)
 - Twitter: [@twitterhandle](https://twitter.com/jerymey4)
 - Linkedin: [@linkedin](www.linkedin.com/in/jery-mey-melachio-tchoffo-00055020a)
+
+👤 **brighton mtandi**
+
+- GitHub: [brighton0102](htpps://github.com/brighton0102)
+- Twitter: [@brighton_ui](https://twitter.com/brighton_ui)
+- LinkedIn: [brighton](https://www.linkedin.com/in/brighton-mtandi-976615267/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 

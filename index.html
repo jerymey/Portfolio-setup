@@ -10,19 +10,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="body-white">
-        <nav class="navbar">
-            <div class="logo">
-              <a href="#">My Logo</a>
-                <img src="images/appbar.png" alt="menu button" />
-           
+    <header>
+            <nav class="navbar">
+                    <a href="#" class="logo">My Logo</a>              
              <ul class="nav-links">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-             </ul>
-            </div>
+                <li class="nav-items"><a href="#card-container" class="navlink">Portfolio</a></li>
+                <li class="nav-items"><a href="#about-myself" class="navlink">About</a></li>
+                <li class="nav-items"><a href="#fouter" class="navlink">Contact</a></li>
+             </ul> 
+             <div class="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>      
         </nav>
+    </header>
        <section class="header">
     <div class="header-1">
         <h1 class="title">I’m Jery Mey. <br>
@@ -42,7 +44,7 @@
       </section>
       <!-- ---------- cards section ----------->
 
-      <section class="card-container">
+      <section class="card-container" id="card-container">
         <article class="cards cards-1">
             <figure>
                 <img class="mobile" src="images/tonic.png" alt="">
@@ -92,7 +94,7 @@
             <p class="desktop">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
             <ul class="skills-card">
                 <li class="skill-1">html</li>
-                <li class="skill-1 desktop">Ruby on rails</li>
+                <li class="desktop skill-1">Ruby on rails</li>
                 <li class="skill-1">css</li>
                 <li class="skill-1">Javascript</li>
             </ul>
@@ -166,7 +168,7 @@
 
       <!-- </* ----------- ABOUT MYSELF ----------- */> -->
 
-      <Section class="about-myself">
+      <Section class="about-myself" id="about-myself">
         <article class="about">
     <div class="cards-3">
         <h2 class="title-card">About Myself</h2>
@@ -208,7 +210,7 @@
       </Section>
 
       <!-- -------------- Footer --------------- -->
-    <section class="fouter">
+    <section class="fouter" id="fouter">
         <footer>
         <div class="contact">
         <h2 class="title-footer">Contact me</h2>
@@ -227,6 +229,7 @@
         </form>
         </footer>    
       </section>
-    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
