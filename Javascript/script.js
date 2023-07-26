@@ -11,3 +11,5 @@ document.querySelectorAll('.navlink').forEach((n) => n
     hamb.classList.remove('active');
     navLinks.classList.remove('active');
   }));
+
+
