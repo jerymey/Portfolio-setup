@@ -456,12 +456,6 @@ button:hover {
 
 /* -------------- Validation form ------------------ */
 
-#error {
-  color: rgb(255, 0, 0);
-  font-weight: 600;
-}
-
-
 @media (min-width: 768px) {
   .header {
     background-image: url(images/desktop-version/bg/Header\ bg@2x.png);
@@ -681,4 +675,3 @@ button:hover {
     width: 27.9375rem;
   }
 }
-
