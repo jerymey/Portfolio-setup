@@ -219,12 +219,13 @@
         </p>
         </div>
 
-        <form action="https://formspree.io/f/mknadjvd" method="post">
+        <form action="https://formspree.io/f/mknadjvd" method="post" class="formClass">
         <fieldset class="contact-form">
           <input type="text" name="name" placeholder="Your Name" maxlength="30" required />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="email" name="email" placeholder="Your Email" id="contact-email" required />
           <textarea name="message" rows="8" placeholder="Write your message here . . ." maxlength="500" required></textarea>
-          <button type="submit" class="btn btn-1">Get in touch</button>
+          <p id="error"></p>
+          <button type="submit" onclick="submit(e)" class="btn btn-1">Get in touch</button>
         </fieldset>
         </form>
         </footer>    
