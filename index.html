@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script defer src="Javascript/popup.js"></script>
+<script defer src="Javascript/script.js"></script>
 </head>
 <body>
     <header>
@@ -44,11 +46,6 @@
       </section>
       <!-- ---------- cards section ----------->
 
-      <section class="card-works" id="card-works"></section>
-
-
-      <div id="productModal" class="modal"></div>
-
       <section class="card-container" id="card-container">
         <article class="cards cards-1">
             <figure>
@@ -72,7 +69,7 @@
                 <li class="skill-1">css</li>
                 <li class="skill-1">Javascript</li>
             </ul>
-            <button data-modal-target="#card-container" class="btn">See Project</button>
+            <button data-modal-target="#modal" class="btn">See Project</button>
     </div>   
         </article>
 
@@ -103,7 +100,7 @@
                 <li class="skill-1">css</li>
                 <li class="skill-1">Javascript</li>
             </ul>
-            <button class="btn">See Project</button>
+            <button data-modal-target="#modal" class="btn">See Project</button>
     </div>
         </article>
 
@@ -134,7 +131,7 @@
                 <li class="skill-1">css</li>
                 <li class="skill-1">Javascript</li>
             </ul>
-            <button class="btn">See Project</button>
+            <button data-modal-target="#modal" class="btn">See Project</button>
     </div>
         </article>
 
@@ -166,10 +163,42 @@
                 <li class="skill-1">css</li>
                 <li class="skill-1">Javascript</li>
             </ul>
-            <button class="btn">See Project</button>
+            <button data-modal-target="#modal" class="btn">See Project</button>
     </div>
         </article>
     </section>  
+
+    <!-- -------------------MODAL SECTION ----------------------- -->
+<div id="modal" class="modal">
+    
+    <article class="cards cards-1">
+        <button data-close-button class="close-button">&times;</button>
+        <figure>
+            <img class="mobile" src="images/tonic.png" alt="">
+            <img class="desktop" src="images/desktop-version/nature.png" alt="">
+        </figure>
+  <div class="detail-card">
+        <h2 class="title-card">Tonic</h2>    
+    <div class="header-details">
+        <h4>CANOPY</h4>           
+        <ul class="dot">              
+            <li>Back End Dev</li>               
+            <li>2015</li>    
+        </ul>
+    </div>
+        <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+        </p>
+        <ul class="skills-card">
+            <li class="skill-1">html</li>
+            <li class="skill-1">css</li>
+            <li class="skill-1">Javascript</li>
+        </ul>
+        <button data-modal-target="#modal" class="btn">See Project</button>
+  </div>   
+    </article>
+</div>
+<div id="overlay"></div>
 
       <!-- </* ----------- ABOUT MYSELF ----------- */> -->
       
@@ -236,8 +265,8 @@
         </footer>    
       </section>
 
-<script src="Javascript/script.js"></script>
-<scrip src="Javascript/popup.js"></script>
-<script src="Javascript/modals.js" ></script>
+<!-- <script src="Javascript/script.js"></script> -->
+<script src="Javascript/popup.js"></script>
+<!-- <script src="Javascript/modals.js" ></script> -->
 </body>
 </html>
