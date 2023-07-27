@@ -454,6 +454,11 @@ button:hover {
   transition: 0.5s;
 }
 
+.displayer p {
+  color: red;
+  font-weight: 500;
+}
+
 /* -------------- Validation form ------------------ */
 
 @media (min-width: 768px) {
