@@ -32,20 +32,22 @@
 //    }
 
 async function api() {
-    const response = await fetch('./javascript/html.json');
+  const response = await fetch("./javascript/html.json");
+
+  const jsonData = await response.json();
+
+  jsonData.data.portfolio.forEach((el, index) => {
+    const cardTemplate = `
   
-    const jsonData = await response.json();
+            <article class="cards-1">
   
-    jsonData.data.portfolio.forEach((el, index) => {
-      const cardTemplate = `
-  
-            <section class="cards">
-  
-                <div class=${(index + 1) % 2 === 0 ? 'card-img-left' : 'card-img-right'}>
+                <div class=${
+                  (index + 1) % 2 === 0 ? "card-img-left" : "card-img-right"
+                }>
   
                     <img
   
-                    class="card-works-image"
+                    class="mobile"
   
                     src=${el.featured_image}
   
@@ -55,33 +57,39 @@ async function api() {
   
                 </div>
   
-                <div class=${(index + 1) % 2 === 0 ? '"card-work-info info-right" ' : '"info-left card-work-info"'}>
+                <div class=${
+                  (index + 1) % 2 === 0
+                    ? '"card-work-info info-right" '
+                    : '"info-left card-work-info"'
+                }>
   
-                    <h2 class="title-work-section">${el.name}</h2>
+                    <h2 class="title-card">${el.name}</h2>
   
-                    <div class="tech-field">
+                    <div class="header-details">
   
                         <p id="bold-st">${el.subheading[0]}</p>
   
-                        <div class="dot"></div>
+                        <ul class="dot"></ul>
   
                         <p>${el.subheading[1]}</p>
   
-                        <div class="dot"></div>
+                        <ul class="dot"></ul>
   
                         <p>${el.subheading[2]}</p>
   
                     </div>
   
-                    <p class="description">
+                    <p>
   
                         ${el.description}
   
                     </p>
   
-                    <div class="languages-used">
+                    <div class="skills-card">
   
-                        ${el.technology.map((res) => `<span class="language">${res}</span>`)};
+                        ${el.technology.map(
+                          (res) => `<span class="language">${res}</span>`
+                        )};
   
                     </div>
   
@@ -96,14 +104,11 @@ async function api() {
             </section>
   
         `;
-  
-      const element = document.querySelector('.card-works');
-  
-      element.innerHTML += cardTemplate;
-    });
-  }
-  
-  api();
 
+    const element = document.querySelector(".card-works");
 
-  
+    element.innerHTML += cardTemplate;
+  });
+}
+
+api();
