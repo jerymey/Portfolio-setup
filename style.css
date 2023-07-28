@@ -545,6 +545,10 @@ button:hover {
     padding: 1.5rem;
   }
 
+  #card {
+   flex-direction: column;
+  }
+
   p {
     display: flex;
     flex-direction: column;
@@ -678,10 +682,12 @@ button:hover {
 /* --------------- MODAL --------------------- */
 .modal {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 10;
+  width: 500px;
+  max-width: 80%;
 }
 
 .modal.active {
@@ -696,11 +702,33 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #344563;
+  background: var(--neutrals-n-50, #C1C7D0);
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(4px);
   pointer-events: none;
 }
 
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.pop-head {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pop-head .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+}
+
+.display-btn {
+  display: flex;
+  justify-content: space-around;
 }
