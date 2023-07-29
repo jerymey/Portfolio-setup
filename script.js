@@ -156,7 +156,6 @@ document.getElementById('work').innerHTML = projects.map((item) => `
 const display = (index) => {
   const obj = document.getElementById(`element-${index}`);
   obj.style.display = 'block';
-  console.log('hi');
 };
 
 function undisplay(index) {
