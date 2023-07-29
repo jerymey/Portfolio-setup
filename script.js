@@ -22,7 +22,7 @@ const projects = [
     name: 'CANOPY',
     back: 'Back End Dev',
     SourceLink: 'https://github.com/jerymey',
-    LiveLink: 'https://jerymey.github.io/My-portfolio/',
+    LiveLink: 'https://jerymey.github.io/Portfolio-setup/',
     years: '2015',
     Image: 'images/desktop-version/nature.png',
     Images: 'images/tonic.png',
@@ -36,7 +36,7 @@ const projects = [
     name: 'FACEBOOK',
     back: 'Full Stack Dev',
     SourceLink: 'https://github.com/jerymey',
-    LiveLink: 'https://jerymey.github.io/My-portfolio/',
+    LiveLink: 'https://jerymey.github.io/Portfolio-setup/)',
     years: '2015',
     Image: 'images/desktop-version/art.png',
     Images: 'images/Multi-Post Stories.png',
@@ -50,7 +50,7 @@ const projects = [
     name: 'FACEBOOK',
     back: 'Full Stack Dev',
     SourceLink: 'https://github.com/jerymey',
-    LiveLink: 'https://jerymey.github.io/My-portfolio/',
+    LiveLink: 'https://jerymey.github.io/Portfolio-setup/)',
     years: '2015',
     Image: 'images/desktop-version/facebook.png',
     Images: 'images/yoga.png',
@@ -64,8 +64,8 @@ const projects = [
     title: 'Uber Navigation',
     name: 'Uber',
     back: 'Lead Developer',
-    SourceLink: '[@githubhandle](https://github.com/jerymey)',
-    LiveLink: 'https://jerymey.github.io/My-portfolio/',
+    SourceLink: 'https://github.com/jerymey',
+    LiveLink: 'https://jerymey.github.io/Portfolio-setup/',
     years: '2018',
     Image: 'images/desktop-version/availaibility.png',
     Images: 'images/art.png',
@@ -144,8 +144,8 @@ document.getElementById('work').innerHTML = projects.map((item) => `
         </ul>
         <div class="separator-line"></div>
         <div class="display-btn">
-          <button class="btn"> See live <img src="${item.Image1}"</button>
-          <button class="btn"> See Source <img src="${item.Image2}"</button>
+          <button class="btn"><a href="${item.LiveLink}"> See live </a><img src="${item.Image1}"</button>
+          <button class="btn"><a href="${item.SourceLink}"> See Source </a><img src="${item.Image2}"</button>
         </div>
         </div>
         </div>
