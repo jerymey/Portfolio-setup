@@ -569,7 +569,9 @@ button:hover {
   }
 
   .desktop {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
   }
 
   .cards-2 {
@@ -698,10 +700,9 @@ button:hover {
 }
 
 .popup {
-  width: 90%;
-  margin: 5px auto;
+  width: 80%;
+  margin: 200px auto;
   background-color: #fff;
-  opacity: 0.9;
   border-radius: 20px;
   padding: 1.5em;
 }
@@ -723,7 +724,6 @@ button:hover {
 
 .display-btn {
   display: flex;
-  justify-content: space-around;
   gap: 20px;
 }
 
