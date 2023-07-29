@@ -11,8 +11,8 @@ document.querySelectorAll('.navlink').forEach((n) => n
     hamb.classList.remove('active');
     navLinks.classList.remove('active');
   }));
-
-// ----------------------popup------------------------------------------//
+    
+    // ----------------------popup------------------------------------------//
 
 const projects = [
   {
@@ -25,6 +25,8 @@ const projects = [
     years: '2015',
     Image: 'images/desktop-version/nature.png',
     Images: 'images/tonic.png',
+    Image1: 'images/Frame.png',
+    Image2: 'images/Icon - Export.png',
     descrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   },
   {
@@ -37,6 +39,8 @@ const projects = [
     years: '2015',
     Image: 'images/desktop-version/art.png',
     Images: 'images/Multi-Post Stories.png',
+    Image1: 'images/Frame.png',
+    Image2: 'images/Icon - Export.png',
     descrip: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
   },
   {
@@ -64,6 +68,8 @@ const projects = [
     years: '2018',
     Image: 'images/desktop-version/availaibility.png',
     Images: 'images/art.png',
+    Image1: 'images/Frame.png',
+    Image2: 'images/Icon - Export.png',
     descrip: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
   },
 ];
@@ -117,7 +123,7 @@ document.getElementById('work').innerHTML = projects.map((item) => `
           <img class="desktop"src="${item.Image}" alt="tonic project" />
           <img class="mobile" src="${item.Images}" alt="tonic project" />
         </figure>
-        <div class="flex-text desktop mobile">
+        <div class="flex-text desktop">
         <div class="text-section">
         <p class="mobile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
         <p class="desktop">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -147,13 +153,5 @@ document.getElementById('work').innerHTML = projects.map((item) => `
       </div>
       `).join('');
 
-const display = (index) => {
-  const obj = document.getElementById(`element-${index}`);
-  obj.style.display = 'block';
-  console.log('hi');
-};
 
-function undisplay(index) {
-  const obj = document.getElementById(`element-${index}`);
-  obj.style.display = 'none';
-}
+  

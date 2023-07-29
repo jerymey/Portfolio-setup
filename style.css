@@ -724,6 +724,7 @@ button:hover {
 .display-btn {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .pop-head {
@@ -733,18 +734,3 @@ button:hover {
   align-items: center;
 }
 
-.pop-head .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 2rem;
-}
-
-/* .popup-image-container {
-  width: 80%;
-} */
-
-.flex-text .desktop {
-  display: flex;
-}
