@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const hamb = document.querySelector('.hamb');
 const navLinks = document.querySelector('.nav-links');
 
@@ -123,13 +124,12 @@ document.getElementById('work').innerHTML = projects.map((item) => `
           <img class="desktop"src="${item.Image}" alt="tonic project" />
           <img class="mobile" src="${item.Images}" alt="tonic project" />
         </figure>
-        <div class="flex-text desktop">
+        
         <div class="text-section">
         <p class="mobile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
-        <p class="desktop">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        <p class="desktop">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.</P>
-        </div>
+        <p class="desktop">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.</P>
         <div class="button-section">
         <ul class="skills-card">
           <li class="skill-1">

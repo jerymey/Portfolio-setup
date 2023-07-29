@@ -746,6 +746,6 @@ button:hover {
   width: 80%;
 } */
 
-.flex-text .desktop {
-  display: flex;
+.text-section {
+  display: block;
 }
