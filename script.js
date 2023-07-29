@@ -12,8 +12,8 @@ document.querySelectorAll('.navlink').forEach((n) => n
     hamb.classList.remove('active');
     navLinks.classList.remove('active');
   }));
-    
-    // ----------------------popup------------------------------------------//
+
+// ----------------------popup------------------------------------------//
 
 const projects = [
   {
@@ -153,16 +153,13 @@ document.getElementById('work').innerHTML = projects.map((item) => `
       </div>
       `).join('');
 
-      const display = (index) => {
-        const obj = document.getElementById(`element-${index}`);
-        obj.style.display = 'block';
-        console.log('hi');
-      };
-      
-      function undisplay(index) {
-        const obj = document.getElementById(`element-${index}`);
-        obj.style.display = 'none';
-      }
+const display = (index) => {
+  const obj = document.getElementById(`element-${index}`);
+  obj.style.display = 'block';
+  console.log('hi');
+};
 
-
-  
+function undisplay(index) {
+  const obj = document.getElementById(`element-${index}`);
+  obj.style.display = 'none';
+}
