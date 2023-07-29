@@ -721,12 +721,6 @@ button:hover {
   border-radius: 10px;
 }
 
-.btn a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
 .display-btn {
   display: flex;
   justify-content: space-around;
@@ -751,6 +745,6 @@ button:hover {
   width: 80%;
 } */
 
-.flex-text .desktop{
+.flex-text .desktop {
   display: flex;
 }

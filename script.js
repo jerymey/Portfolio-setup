@@ -12,64 +12,62 @@ document.querySelectorAll('.navlink').forEach((n) => n
     navLinks.classList.remove('active');
   }));
 
-  // ----------------------popup------------------------------------------//
+// ----------------------popup------------------------------------------//
 
+const projects = [
+  {
+    id: 1,
+    title: 'Tonic',
+    name: 'CANOPY',
+    back: 'Back End Dev',
+    SourceLink: 'https://github.com/jerymey',
+    LiveLink: 'https://jerymey.github.io/My-portfolio/',
+    years: '2015',
+    Image: 'images/desktop-version/nature.png',
+    Images: 'images/tonic.png',
+    descrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  },
+  {
+    id: 2,
+    title: 'Multi-Post Stories',
+    name: 'FACEBOOK',
+    back: 'Full Stack Dev',
+    SourceLink: 'https://github.com/jerymey',
+    LiveLink: 'https://jerymey.github.io/My-portfolio/',
+    years: '2015',
+    Image: 'images/desktop-version/art.png',
+    Images: 'images/Multi-Post Stories.png',
+    descrip: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+  },
+  {
+    id: 3,
+    title: 'Facebook 360',
+    name: 'FACEBOOK',
+    back: 'Full Stack Dev',
+    SourceLink: 'https://github.com/jerymey',
+    LiveLink: 'https://jerymey.github.io/My-portfolio/',
+    years: '2015',
+    Image: 'images/desktop-version/facebook.png',
+    Images: 'images/yoga.png',
+    Image1: 'images/Frame.png',
+    Image2: 'images/Icon - Export.png',
+    descrip: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
 
-
-  const projects = [
-    {
-      id: 1,
-      title: 'Tonic',
-      name: 'CANOPY',
-      back: 'Back End Dev',
-      SourceLink: 'https://github.com/jerymey',
-      LiveLink: 'https://jerymey.github.io/My-portfolio/',
-      years: '2015',
-      Image: 'images/desktop-version/nature.png',
-      Images: 'images/tonic.png',
-      descrip: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    },
-    {
-      id: 2,
-      title: 'Multi-Post Stories',
-      name: 'FACEBOOK',
-      back: 'Full Stack Dev',
-      SourceLink: 'https://github.com/jerymey',
-      LiveLink: 'https://jerymey.github.io/My-portfolio/',
-      years: '2015',
-      Image: 'images/desktop-version/art.png',
-      Images: 'images/Multi-Post Stories.png',
-      descrip: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    },
-    {
-      id: 3,
-      title: 'Facebook 360',
-      name: 'FACEBOOK',
-      back: 'Full Stack Dev',
-      SourceLink: 'https://github.com/jerymey',
-      LiveLink: 'https://jerymey.github.io/My-portfolio/',
-      years: '2015',
-      Image: 'images/desktop-version/facebook.png',
-      Images: 'images/yoga.png',
-      Image1: 'images/Frame.png',
-      Image2: 'images/Icon - Export.png',
-      descrip: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-  
-    },
-    {
-      id: 4,
-      title: 'Uber Navigation',
-      name: 'Uber',
-      back: 'Lead Developer',
-      SourceLink: '[@githubhandle](https://github.com/jerymey)',
-      LiveLink: 'https://jerymey.github.io/My-portfolio/',
-      years: '2018',
-      Image: 'images/desktop-version/availaibility.png',
-      Images: 'images/art.png',
-      descrip: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    },
-  ];
-  document.getElementById('work').innerHTML = projects.map((item) => ` 
+  },
+  {
+    id: 4,
+    title: 'Uber Navigation',
+    name: 'Uber',
+    back: 'Lead Developer',
+    SourceLink: '[@githubhandle](https://github.com/jerymey)',
+    LiveLink: 'https://jerymey.github.io/My-portfolio/',
+    years: '2018',
+    Image: 'images/desktop-version/availaibility.png',
+    Images: 'images/art.png',
+    descrip: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+  },
+];
+document.getElementById('work').innerHTML = projects.map((item) => ` 
   <article class="cards cards-1">
   <figure>
       <img class="mobile" src="${item.Images}" alt="">
@@ -148,14 +146,14 @@ document.querySelectorAll('.navlink').forEach((n) => n
       </div>
       </div>
       `).join('');
-  
-  const display = (index) => {
-    const obj = document.getElementById(`element-${index}`);
-    obj.style.display = 'block';
-    console.log('hi');
-  };
-  
-  function undisplay(index) {
-    const obj = document.getElementById(`element-${index}`);
-    obj.style.display = 'none';
-  }
+
+const display = (index) => {
+  const obj = document.getElementById(`element-${index}`);
+  obj.style.display = 'block';
+  console.log('hi');
+};
+
+function undisplay(index) {
+  const obj = document.getElementById(`element-${index}`);
+  obj.style.display = 'none';
+}
