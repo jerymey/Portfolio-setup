@@ -299,7 +299,7 @@ p {
   border-radius: 0.5rem;
   border: 1px solid var(--primary-b-400, #6070ff);
   background: var(--neutrals-n-10, #f7f7f9);
-  width: fit-content;
+  width: max-content;
   margin-top: 10px;
 }
 
@@ -569,7 +569,10 @@ button:hover {
   }
 
   .desktop {
-    display: flex;
+    display: grid;
+
+    /* grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem; */
   }
 
   .cards-2 {
@@ -672,4 +675,78 @@ button:hover {
     border-radius: 0%;
     width: 27.9375rem;
   }
+
+  .popup {
+    width: 50%;
+  }
+
+  .popup-window {
+    width: 50%;
+  }
+}
+
+/* ------------------Popup----------------- */
+.popup-window {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #ebecf094;
+  overflow-y: auto;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  -webkit-box-shadow: 10px 8px 119px 200px rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+
+.popup {
+  width: 80%;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1.5em;
+}
+
+.button-section {
+  color: #fff;
+  padding: 20px;
+}
+
+.btn button {
+  display: inline-block;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #396df2;
+  margin: 20px;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+}
+
+.display-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.pop-head {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pop-head .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+}
+
+/* .popup-image-container {
+  width: 80%;
+} */
+
+.text-section.desktop {
+  display: flex;
 }
