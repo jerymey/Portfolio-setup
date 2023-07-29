@@ -140,8 +140,8 @@ document.getElementById('work').innerHTML = projects.map((item) => `
           </li>
           <li class="skill-1">
             Javascript
-          </li><br>
-          <br><li class="skill-1">
+          </li>
+          <li class="skill-1">
             Ruby
           </li>
           <li class="skill-1">
