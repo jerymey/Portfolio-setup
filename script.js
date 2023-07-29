@@ -136,10 +136,16 @@ document.getElementById('work').innerHTML = projects.map((item) => `
             html
           </li>
           <li class="skill-1">
-            Ruby on rails
+            css
           </li>
           <li class="skill-1">
-            css
+            Javascript
+          </li>
+          <li class="skill-1">
+            Ruby
+          </li>
+          <li class="skill-1">
+            Boostrap
           </li>
         </ul>
         <div class="separator-line"></div>
