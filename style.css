@@ -299,7 +299,7 @@ p {
   border-radius: 0.5rem;
   border: 1px solid var(--primary-b-400, #6070ff);
   background: var(--neutrals-n-10, #f7f7f9);
-  width: fit-content;
+  width: max-content;
   margin-top: 10px;
 }
 
