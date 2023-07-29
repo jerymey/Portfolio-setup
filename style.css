@@ -570,8 +570,8 @@ button:hover {
 
   .desktop {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 1rem;
+    /* grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem; */
   }
 
   .cards-2 {
@@ -746,6 +746,6 @@ button:hover {
   width: 80%;
 } */
 
-.text-section {
-  display: block;
+.text-section.desktop {
+  display: flex;
 }
