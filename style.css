@@ -734,3 +734,18 @@ button:hover {
   align-items: center;
 }
 
+.pop-head .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+}
+
+/* .popup-image-container {
+  width: 80%;
+} */
+
+.flex-text .desktop {
+  display: flex;
+}
