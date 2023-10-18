@@ -467,22 +467,18 @@ button:hover {
   }
 
   .header-1 {
-    margin: 20rem 20rem 16rem 13rem;
+    margin: 12rem 2rem 4rem 13rem;
   }
 
   .nav-links {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     color: #000;
-
-    /* position: fixed;
-    left: -100%;
-    top: 0;
-    flex-direction: column;
-    background-color: #7f8cff;
-    width: 100%;
-    text-align: center;
-    height: 100vh;
-    opacity: 0.93; */
+    flex-direction: row;
+    left: 0;
+    background: white;
+    backdrop-filter: none;
+    height: 0;
   }
 
   .nav-links li a {
@@ -495,10 +491,17 @@ button:hover {
     font-style: normal;
     font-weight: 600;
     line-height: 1.25rem;
+    margin-left: 2rem;
+    width: 50%;
+    margin-right: 4rem;
+    margin-top: -2.5rem;
   }
 
   .navbar {
-    width: 1%;
+    position: fixed;
+    align-items: center;
+    background: white;
+    padding: 0 2px 17px 25px;
   }
 
   .bar {
@@ -604,7 +607,6 @@ button:hover {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    position: relative;
     overflow: hidden;
   }
 
