@@ -501,7 +501,7 @@ button:hover {
     position: fixed;
     align-items: center;
     background: white;
-    padding: 0px 2px 17px 25px;
+    padding: 0 2px 17px 25px;
   }
 
   .bar {
