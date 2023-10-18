@@ -492,8 +492,13 @@ button:hover {
     font-style: normal;
     font-weight: 600;
     line-height: 1.25rem;
-    margin-left: 0;
-    width: 10%;
+    margin-left: 2rem;
+    width: 50%;
+    margin-right: 4rem;
+  }
+
+  .navbar {
+    position: fixed;
   }
 
   .bar {
